@@ -29,7 +29,7 @@ public class Aplic {
         objAluno.setNtTrab1(ntTrab1);
         objAluno.setNtTrab2(ntTrab2);
          
-        while(i <= 4){
+        while(i <= 4 && i >=0){
             System.out.println("\n1 - Exibir Nota das provas/Trabalhos");
             System.out.println("2 - Exibir Média das provas/Trabalhos");
             System.out.println("3 - Exibir Média Final");
