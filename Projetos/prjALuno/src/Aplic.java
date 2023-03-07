@@ -29,24 +29,28 @@ public class Aplic {
         objAluno.setNtTrab1(ntTrab1);
         objAluno.setNtTrab2(ntTrab2);
          
-        while(i <= 4 && i >=0){
+        while(i != 4){
             System.out.println("\n1 - Exibir Nota das provas/Trabalhos");
             System.out.println("2 - Exibir Média das provas/Trabalhos");
             System.out.println("3 - Exibir Média Final");
             System.out.println("4 - Sair");
             
             i = entrada.nextInt();
-            
-            if(i == 4){
+            if (i == 4){
                 break;
+            }
+            else if(i != 3 && i != 2 && i != 1){
+                System.out.println("Opção errada, digite novamente: ");
             }
             else if (i == 1){
                System.out.print("\nNota das provas/Trabalhos:\n");
                System.out.println(objAluno.getNtPrv1() + "\n" + objAluno.getNtPrv2() + "\n" + objAluno.getNtTrab1() + "\n" + objAluno.getNtTrab2());
             }
             else if (i == 2){
-               System.out.print("\nMédia das provas/Trabalhos:\n");
-               System.out.println(objAluno.calcMediaProva() + "\n" + objAluno.calcMediaTrab());
+               System.out.print("\nMédia das provas\n");
+               System.out.println(objAluno.calcMediaProva());
+               System.out.print("\nMédia dos trabalhos\n");
+               System.out.println(objAluno.calcMediaTrab());
             }
             else if (i == 3){
                System.out.print("\nMédia final\n");
