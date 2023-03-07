@@ -13,11 +13,11 @@ public class circulo {
     }
     
     public double calcArea(){
-        return (3.1416 * (Math.pow(raio, 2)));
+        return (Math.PI * (Math.pow(raio, 2)));
     }
     
     public double calcPerimetro (){
-        return (2* 3.1416 * raio);
+        return (2 * Math.PI * raio);
     }
     
     public double calcDiametro (){
