@@ -23,7 +23,7 @@ public class Aplic {
         }
         
         
-            while (opcao < 6){
+            while (opcao != 6){
                 System.out.println("\n1 – Consultar quarto");
                 System.out.println("2 – Reservar quarto");
                 System.out.println("3 – Liberar quarto");
@@ -126,7 +126,16 @@ public class Aplic {
                     }
                     System.out.println("\nO valor de faturamento do hotel é de: " + df.format(totalHotel));
                     break;
+                    
+                    case 6: 
+                        break;
+                        
+                    default: 
+                        System.out.println("\nOpção inválida. Digite novamente: ");
+                        break;
+                        
                 }
+                
             }
             
             
